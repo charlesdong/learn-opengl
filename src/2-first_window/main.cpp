@@ -29,7 +29,7 @@ int main()
 	}
 	glfwMakeContextCurrent(window);
 
-	// init GLFW
+	// init GLEW
 	glewExperimental = GL_TRUE;
 	if (glewInit())
 	{
