@@ -3,7 +3,6 @@
 #include <fstream>
 using std::cout;
 using std::endl;
-using std::ifstream;
 
 const int PROGRAM = 0;
 
@@ -81,7 +80,7 @@ GLuint makeProgram(GLuint vShader, GLuint fShader)
 
 const char * readFile(const char * filename)
 {
-	ifstream fin;
+	std::ifstream fin;
 	char * source;
 	int size = 0;
 
