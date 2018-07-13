@@ -40,7 +40,7 @@ GLuint loadShader(const char * filename, GLuint type)
 	if (!checkErrors(shader, type))
 	{
 		outputInfoLog(shader, type);
-		glDeleteShader(type);
+		glDeleteShader(shader);
 		return 0;
 	}
 
